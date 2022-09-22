@@ -1,11 +1,12 @@
-// Lab2_1.c: Обчислення арифметичних задач з форматованим вводом-вивидом//
+// Lab2_1.c: Обчислення арифметичних задач з форматованим виводом результату//
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include<locale.h>
 #include <conio.h>
+#include <math.h>
 
-int a,b, rez1, rez2, rez3;
+int a, b, rez1, rez2, rez3;
 
 int main()
 {
@@ -19,7 +20,8 @@ int main()
 
 	rez1 = a % b; 
 	rez2 = b - a; 
-	rez3 = (a + b)*(a + b);
+	//rez3 = (a + b)*(a + b);
+	rez3 = pow((a + b), 2);
 
 	printf("\n \n ОРИМАНИЙ РЕЗУЛЬТАТ:");
 	printf("\n \t Залишок вiд дiлення %d / %d = %d", a, b, rez1); 
